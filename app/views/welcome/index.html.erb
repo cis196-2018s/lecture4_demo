@@ -1,0 +1,18 @@
+<p style="color: green;"><%= notice %></p>
+<h1>Welcome!</h1>
+
+<p>This is a fun app!</p>
+
+<%= form_with url: '/subscribe' do |form| %>
+  <%= form.text_field :name, placeholder: 'Name' %>
+  <%= form.email_field :email, placeholder: 'Email' %>
+
+  <%= form.submit 'Subscribe' %>
+<% end %>
+
+<%= @cis196 %>
+<ul>
+  <% ['Subscription 1', 'S2', 'S3'].each do |sub| %>
+    <li><%= sub %></li>
+  <% end %>
+</ul>
